@@ -1,6 +1,10 @@
 # CLASSIFIEZ ANTOMATIQUEMENT DES BIENS DE CONSOMMATION
-## Projet du parcours DataScientist d'OpenClassrooms
-**Contexte**
+
+## Contexte
+
+<p align="center">
+  <img src="logo_place_de-marche.png" alt="Texte alternatif">
+</p>
 
 Vous êtes Data Scientist au sein de l’entreprise "Place de marché”, qui souhaite lancer une marketplace e-commerce.
 
