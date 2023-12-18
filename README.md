@@ -1,5 +1,7 @@
 # CLASSIFIEZ ANTOMATIQUEMENT DES BIENS DE CONSOMMATION
 
+## Troisième projet de ma formation de Data Scientist
+
 ## Contexte
 
 <p align="center">
@@ -15,7 +17,7 @@ Pour l'instant, l'attribution de la catégorie d'un article est effectuée manue
 Pour rendre l’expérience utilisateur des vendeurs (faciliter la mise en ligne de nouveaux articles) et des acheteurs (faciliter la recherche de produits) la plus fluide possible, et dans l'optique d'un passage à l'échelle, il devient nécessaire d'automatiser cette tâche.
 
 ## Préambule
-Ce projet a été réalisé en langage Python dans des Jupyter Notebooks, ainsi qu'un notebook Google Collab.
+Ce projet a été réalisé en langage Python dans des notebooks Jupyter, ainsi qu'un notebook Google Collab.
 
 ## Missions
 Linda, Lead Data Scientist, vous demande donc d'étudier la faisabilité d'un moteur de classification des articles en différentes catégories, avec un niveau de précision suffisant.
@@ -39,8 +41,8 @@ Linda, Lead Data Scientist, vous demande donc d'étudier la faisabilité d'un mo
 **Mission 2: Réalisation d'une classification supervisée à partir des images *via* la mise en place d'une data augmentation afin d’optimiser le modèle**
 
 **Mission 3: Test de la collecte de produits à base de “champagne” à partir d'une API (https://rapidapi.com/edamam/api/edamam-food-and-grocery-database)**
-1. Souhait d'élargir la gamme de produits, en particulier dans l’épicerie fine
-2. Extraction des 10 premiers produits dans un fichier “.csv”, contenant pour chaque produit les données suivantes : foodId, label, category, foodContentsLabel, image
+1. Souhait d'élargir la gamme de produits, en particulier dans l’épicerie fine.
+2. Extraction des 10 premiers produits dans un fichier “.csv”, contenant pour chaque produit les données suivantes : foodId, label, category, foodContentsLabel, image.
 
 ## Contenu de ce dépôt
 1. Le notebook Jupyter pour l'étude de faisabilité d'un moteur de classification d'articles basé sur le texte: notebook_1_faisabilite_texte.ipynb.
@@ -51,6 +53,28 @@ Linda, Lead Data Scientist, vous demande donc d'étudier la faisabilité d'un mo
 6. Le notebook Jupyter contenant le script pour l'extraction des 10 premiers produits à base de champagne: notebook_4_script_requete_api.ipynb.
 7. La présentation des résultats du projet sous format pdf: presentation_5.pdf.
 8. L'extraction des 10 premiers produits à base de champagne sous format csv: extraction_api_6.csv.
+9. La liste des librairies nécessaires à la réalisation du projet: requirements.txt.
+10. Le logo de Place de marché: logo_place_de_marche.png
+
+## Compétences acquises
+1. Prétraitement des données textes pour l'obtention d'un jeu de données exploitable:
+    - Nettoyage des champs de texte (suppression de la ponctuation *via* le RegexpTokenizer et des mots de liaison, mise en minuscules)
+    - "Lemmatisation " des phrases (voire "lemmatisation").
+    - Etapes supplémentaires de nettoyage: Conservation des mots anglais d'au moins 3 lettres, élimination des tokens uniques, élimination des éléments des adresses URL et HTML, élimination des caractères non-ascii et conservation unique des noms et des verbes.
+2. "Feature extraction" des données textuelles par plusieurs approches:
+    - Approche de type bag of words (sac de mots): comptage de mots et Tf-idf.
+    - Notion de l'approche de type word/sentence embedding (plongement de mots): Word2Vec, BERT et USE (Universal Sentence Encoder).
+3. Prétraitement des données images pour l'obtention d'un jeu de données exploitable: Utilisation de Pillow pour le retraitement des images (contraste, filtrage du bruit de fond et floutage)
+4. "Feature extraction" des données images par plusieurs approches:
+    - Notion de bag of images *via* la génération de descripteurs (algorithme SIFT): Non performant.
+    - Notion d'extraction des features *via* un algorythme de Transfer Learning (CNN) basé sur des réseaux de neurones.
+5. Réduction dimensionnelle: PCA suivie d'un T-SNE:
+    - LA PCA permet:(i) le maintien d'une variance expliquée élevée à 99%, (ii) la création de features décorrélées entre elles et (iii) la réduction de la dimensionnalité afin de réduire le temps de traitement du T-SNE.
+    - Le T-SNE permet la réduction en 2 composantes pour la visualisation en 2D des catégories de produits.
+6. Notion de la stratégie d’élaboration d’un modèle d'apprentissage profond utilisant des modèles pré-entraînés (transfer learning) et entraînement des modèles afin de réaliser une analyse prédictive.
+7. Évaluation de la performance des modèles d’apprentissage profond selon différents critères (scores, temps d'entraînement, etc.) afin de choisir le modèle le plus performant pour la problématique métier.
+8. Utilisation des techniques d’augmentation des données afin d'améliorer la performance des modèles.
+9. Définition de la stratégie de collecte de données *via* une API.
 
 ## Auteur
 **colple** *(Coline Plé)*
