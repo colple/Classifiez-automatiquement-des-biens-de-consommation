@@ -1,6 +1,6 @@
-# CLASSIFIEZ ANTOMATIQUEMENT DES BIENS DE CONSOMMATION
+# CLASSIFIEZ AUTOMATIQUEMENT DES BIENS DE CONSOMMATION
 
-## Troisième projet de ma formation de Data Scientist
+## Cinquième projet de ma formation de Data Scientist
 
 ## Contexte
 
