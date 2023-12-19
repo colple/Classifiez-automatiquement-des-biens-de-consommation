@@ -19,6 +19,10 @@ Pour rendre l’expérience utilisateur des vendeurs (faciliter la mise en ligne
 ## Préambule
 Ce projet a été réalisé en langage Python dans des notebooks Jupyter, ainsi qu'un notebook Google Collab.
 
+## Les données
+
+Les données sont disponibles à l'adresse suivante: https://s3-eu-west-1.amazonaws.com/static.oc-static.com/prod/courses/files/Parcours_data_scientist/Projet+-+Textimage+DAS+V2/Dataset+projet+pre%CC%81traitement+textes+images.zip 
+
 ## Missions
 Linda, Lead Data Scientist, vous demande donc d'étudier la faisabilité d'un moteur de classification des articles en différentes catégories, avec un niveau de précision suffisant.
 
