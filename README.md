@@ -81,4 +81,4 @@ Linda, Lead Data Scientist, vous demande donc d'étudier la faisabilité d'un mo
 9. Définition de la stratégie de collecte de données *via* une API.
 
 ## Auteur
-**colple** *(Coline Plé)*
+**Coline Plé**
